@@ -23,30 +23,52 @@
         <a class="navbar-brand" href="#">Me</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">WHO</a></li>
-          <li><a href="#">WHAT</a></li>
-          <li><a href="#">WHERE</a></li>
+        <!-- Nav tabs -->
+        <ul class="nav navbar-right navbar-nav" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid bg-1 text-center">
-    <h3>Who Am I?</h3>
-    <img src="avatar.jpg" class="img-circle" alt="Bird">
-    <h3>I'm an adventurer</h3>
-  </div>
-
-  <div class="container-fluid bg-2 text-center">
-    <h3>What Am I?</h3>
-    <p>Lorem ipsum..</p>
-  </div>
-
-  <div class="container-fluid bg-3 text-center">
-    <h3>Where To Find Me?</h3>
-    <p>Lorem ipsum..</p>
-  </div>
+  <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container-fluid bg-1 text-center">
+              <h3>Module 4</h3>
+              <img src="avatar.jpg" class="img-circle" alt="Bird">
+              <h3>I'm an adventurer</h3>
+            </div>
+          </div>
+          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="container-fluid bg-2 text-center">
+              <h3>Module 3</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+            <div class="container-fluid bg-3 text-center">
+              <h3>Module 2</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="container-fluid bg-2 text-center">
+              <h3>Module 2</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+        </div>
 
 </body>
 </html>
